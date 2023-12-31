@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rndom Number</title>
+    <style>
+        #cont {
+            margin: auto;
+            padding: 10px;
+            width: 300px;
+            height: 400px;
+            text-align: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+        button {
+            background-color: rgb(222, 189, 150);
+            width: 100px;
+            height: 30px;
+            border: rgb(222, 189, 150);
+            border-radius:10px ;
+            font-weight: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="cont">
+            <h1>Random Number Generators(10 - 23)</h1>
+            <button id="btn1">Generate</button>
+            <h1 id="myh1"></h1>
+            <h1 id="myh2"></h1>
+            <h1 id="myh3"></h1>
+        </div>
+    </div>
+
+    <script>
+        let x,y,z;
+        let b = 10 ;
+        let c = 23;
+
+        document.getElementById('btn1').onclick = function (){
+            x = String(document.getElementById('myh1').textContent = Math.floor(Math.random() * c) + b);
+            y = String(document.getElementById('myh2').textContent = Math.floor(Math.random() * c) + b);
+            z = String(document.getElementById('myh3').textContent = Math.floor(Math.random() * c) + b);
+
+        }
+    </script>
+</body>
+</html>
