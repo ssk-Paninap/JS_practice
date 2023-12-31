@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Adding and Subtracting</title>
+</head>
+<body>
+    <h3>Addition</h3>
+    <label>Num 1</label>
+    <input type="text" id="tb1">
+
+    <label>Num 2</label>
+    <input type="text" id="tb2">
+
+    <label>Result</label>
+    <input type="text" id="tb3">
+
+    <button id="btn1">Add</button>
+    <button id="btn2">Subtract</button>
+
+
+    <script>
+
+        let a;
+        let b;
+        let c;
+        let ans;
+        document.getElementById('btn1').onclick = function (){
+            a = Number(document.getElementById('tb1').value)
+            b = Number(document.getElementById('tb2').value)
+            ans = a + b;
+
+            c = String(document.getElementById('tb3').value = ans);
+
+            console.log(`answer is ${ans}`)
+        }
+
+        document.getElementById("btn2").onclick = function(){
+            a = Number(document.getElementById('tb1').value);
+            b = Number(document.getElementById('tb2').value);
+
+            ans = a - b;
+
+            console.log(`Answer is ${ans}`)
+
+            c = String(document.getElementById('tb3').value = ans);
+        }
+    </script>
+</body>
+</html>
