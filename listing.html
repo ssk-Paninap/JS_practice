@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing through checkbox</title>
+    <style>
+        body {
+            background-color: rgb(80, 89, 89);
+        }
+        #cont {
+            width: 500px;
+            height: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgb(249, 255, 185, .75);
+            border-radius: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            box-shadow: 0 5px 15px rgb(0,0,0,0.5);
+        }
+        #cont:hover {
+            width: 550px;
+            height: 550px;
+            transition: 1s;
+            margin: auto;
+            padding: 50px;
+            background-color: rgb(41, 105, 255);
+            border-radius: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            box-shadow: 0 5px 30px rgb(0,0,0,0.5);
+            color: white;
+        }
+
+        #btn1 {
+            width: 100px;
+            height: 40px;
+            background-color: #6df5fe;
+            border:  #6df5fe;
+            border-radius: 10px;
+            margin:20px;
+        }
+        #btn1:hover {
+            width: 100px;
+            height: 40px;
+            background-color: #41ff93;
+            border:  #41ff93;
+            border-radius: 10px;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div class="cont2">
+            <h2 id="myh3">Item List</h2>
+            <h3>Pick your an item to add to your list:</h3>
+            <label for="Water">Water</label>
+            <input type="checkbox" id="Water">
+
+            <label for="Juice">Juice</label>
+            <input type="checkbox" id="Juice">
+
+            <label for="Shake">Shake</label>
+            <input type="checkbox" id="Shake">
+
+            <label for="Cake">Cake</label>
+            <input type="checkbox" id="Cake">
+            
+            <label for="Rice">Rice</label>
+            <input type="checkbox" id="Rice">
+            <br>
+            <button type="submit" id="btn1">order</button>
+        </div>
+
+        <div class="cont2">
+            <h1>List of items you pick:</h1>
+            <h2 id="myh4"></h2>
+        </div>
+    </div>
+
+    <script  src="listing.js"></script>
+</body>
+</html>
