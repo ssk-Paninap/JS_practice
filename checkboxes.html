@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USING CHECKBOXES AND RADIO BUTTONS</title>
+    <style>
+        #cont {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: rgb(144, 182, 215);
+            margin: auto;
+            width: 500px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 40px;
+        }
+
+        #btn1 {
+            width: 100px;
+            height: 40px;
+            font-weight: bold;
+            background-color: rgb(163, 130, 255);
+            border: rgb(163, 130, 255);
+            border-radius: 10px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <div>
+            <h2>Red or Blue?</h2>
+            <label for="rad1">RED</label>
+            <input type="radio" id="rad1" name="picking"> <br>
+            <label for="rad2">BLUE</label>
+            <input type="radio" id="rad2" name="picking"> <br>
+
+            <h3>Pick items that you like:</h3>
+            
+            <label for="item1">Sword</label>
+            <input type="checkbox" id="Sword">
+
+            <label for="item2">Knife</label>
+            <input type="checkbox" id="Knife">
+            
+            <label for="item3">Shield</label>
+            <input type="checkbox" id="Shield">
+            
+            <label for="Staff">Staff</label>
+            <input type="checkbox" id="Staff">
+            
+            <label for="Bow">Bow</label>
+            <input type="checkbox" id="Bow">
+
+            <br>
+
+            <button type="submit" id="btn1">continue</button>
+
+            <h3 id="myh3"></h3>
+            <p id="mp3"></p>
+        </div>
+    </div>
+
+    <script>
+        const rad1 = document.getElementById('rad1');
+        const rad2 = document.getElementById('rad2');
+
+
+
+        const btn1 = document.getElementById('btn1');
+        const myh3 = document.getElementById('myh3');
+        const par = document.getElementById('mp3');
+
+        const items = [document.getElementById('Sword'),
+            document.getElementById('Knife'),
+            document.getElementById('Shield'),
+            document.getElementById('Staff'),
+            document.getElementById('Bow')
+        ];
+        
+        btn1.onclick = function (){
+            
+            if (rad1.checked){
+                myh3.textContent = "You picked RED";
+            }
+            else if (rad2.checked){
+                myh3.textContent = "You picked BLUE";
+            }
+            else {
+                myh3.textContent = "Pick something from RED or BLUE";
+            }
+
+            // FOR THE ITEM PICKING 
+            //Am not yet sure how to simplify this
+            const newItems = [];
+
+            for (let i = 0; i < items.length; i++){
+                if (items[i].checked){
+                    newItems.push(items[i].id);
+                }
+                
+            }
+            par.textContent = `You picked ${newItems.join(' , ')}`;
+           
+        };
+
+    </script>
+</body>
+</html>
