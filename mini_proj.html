@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Setting</title>
+    <style>
+        #main-container {
+            width: 500px;
+            height: 400px;
+            margin: auto;
+            padding: 10px;
+            background-color: rgb(150, 206, 255);
+            border-radius: 10px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 1000;
+        }
+
+        #btn1{
+            margin: 50px;
+            padding: 5px;
+            width: 100px;
+            height: 40px;
+            color: white;
+            background-color: rgb(120, 255, 158);
+            border: rgb(120, 255, 158);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(0,0,0,.5);
+        }
+        #btn1:hover{
+            transition: .25s;
+            margin: 50px;
+            padding: 5px;
+            width: 120px;
+            height: 45px;
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 95, 87);
+            border: rgb(120, 255, 158);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(0,0,0,.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="main-container">
+        <div>
+            <h4>Are you a kid?</h4>
+            <label for="rad1">yes</label>
+            <input type="radio" id="rad1" name="yesno">
+
+            <label for="rad2">no</label>
+            <input type="radio" id="rad2" name="yesno">
+            <br>
+            <h1 id="myh1"></h1>
+            <br>
+            <p>Pick your workouts:</p>
+            <label for="Push Ups">Push Ups</label>
+            <input type="checkbox" id="Push Ups">
+            <br>
+            <label for="Kettlebell Swings">Kettlebell Swings</label>
+            <input type="checkbox" id="Kettlebell Swings">
+            <br>
+            <label for="Jump Squats">Jump Squats</label>
+            <input type="checkbox" id="Jump Squats">
+            <br>
+            <button id="btn1" >submit</button>
+
+            <h3 id="myh3"></h3>
+        </div>
+    </div>
+    <script src="mini_proj.js"></script>
+</body>
+</html>
