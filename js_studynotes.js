@@ -284,4 +284,72 @@
 // else if (PI == "3.14"){
 //     console.log("Same content but not same data type");
 // }
+// let username = "";
 
+// while (username == ""){
+//     username = window.prompt("enter a name");
+// }
+
+// console.log (username);
+
+
+// for(let i = 0; i <= 10; i++){
+//     document.write("<br>");
+//     for(let j = 0; j<=10; j++) {
+//         document.write(i * j);
+//     }
+// }
+
+
+// function hiGuys(username,age){
+//     console.log(`Hi ${username} you are ${age}`);
+
+//     console.log(`I hope ${username} is doing good`);
+// }
+
+// hiGuys("Paninap",21);
+
+// function addNum (a,b){
+//     let res = a + b;
+
+//     return res;
+// }
+// let ans = addNum (1,1);
+// console.log(ans);
+// console.log(addNum(22,45));
+
+// function oddEven(a){
+//     return a % 2 === 0 ? console.log("even") : console.log("odd");
+
+// }
+// oddEven(23);
+// oddEven(20);
+
+// function f1 (){
+//     let x = 12
+//     console.log (x)
+// }
+
+// function f2 (){
+//     let x = 10
+//     console.log (x)
+// }
+
+// f1();
+// f2();
+
+
+// let fruits = ["apple","banana","grapes"];
+// fruits.push("acid");    
+
+
+// for (let i = fruits.length - 1; i >= 0; i--){
+//     console.log(fruits[i]);
+// }
+// for(let j = 0; j < fruits.length; j++){
+//     console.log ("\n",fruits[j]);
+// }
+
+// for (let x of fruits){
+//     console.log(x);
+// }
